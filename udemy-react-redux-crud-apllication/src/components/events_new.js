@@ -27,8 +27,8 @@ class EventsNew extends React.Component{
   }
 
   render(){
-    const {handleSubmit} = this.props;
-
+    const {handleSubmit, pristine, submitting} = this.props;
+    console.log(submitting);
     return(
       <form onSubmit={handleSubmit(this.onSubmit)}>
         <div>
@@ -39,7 +39,7 @@ class EventsNew extends React.Component{
         </div>
 
         <div>
-          <input type="submit" value="Submit" disabled={false} />
+          <input type="submit" value="Submit" disabled={pristine || submitting} />
           <Link to="/" >Cancel</Link>
         </div>
 
