@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+
 import './index.css';
 import reducer from './reducers';
 
@@ -9,7 +10,7 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 //アプリ内で唯一の物
-const store = createStore(reduce);
+const store = createStore(reducer);
 
 ReactDOM.render(
     <Provider store={store}>

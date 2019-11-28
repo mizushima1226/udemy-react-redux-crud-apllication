@@ -1,4 +1,4 @@
-export const INCREMENT = "INCRIMENT";
+export const INCRIMENT = "INCRIMENT";
 export const DECRIMENT = "DECRIMENT";
 
 export const incriment = () => ({
